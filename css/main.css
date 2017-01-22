@@ -107,23 +107,21 @@ header {
     height:50%;
     display: block;
     background-image: url(../img/header.jpg);
-    background-size:1248px;
+    background-size:100%;
     background-attachment: fixed;
-    background-position: center;
+    background-position: inherit;
     background-repeat: no-repeat;
     position: relative;
 }
 
 .hero-text {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    margin-left: 2%;
+    padding-top: 5%;
+    font-size: .75em;
+    text-align: center;
 }
 
 nav {
     display: block;
-    margin: auto;
     padding-top: 2%;
     width: 50%;
     clear: both;
@@ -168,6 +166,11 @@ body h2{
     border-bottom: none;
 }
 
+.project-showcase img {
+    width: 100%;
+    max-width: 300px;
+}
+
 .bottom-border {
     border-bottom: 2px solid black;
 }
@@ -178,12 +181,27 @@ footer {
     padding-top: 50px;
 }
 
+/*About Styles----------------------------------------------------*/
 
+.about-main {
+    padding-top: 10%;
+}
 
+.about-main-img {
+    max-height: 300px;
+}
 
+/*Projects Styles----------------------------------------------------*/
 
+.projects-main {
+    padding-top: 10%;
+}
 
+/*Contact Styles----------------------------------------------------*/
 
+.contact-main {
+    padding-top: 10%;
+}
 
 
 
@@ -281,11 +299,19 @@ footer {
         height:400px;
         display: block;
         background-image: url(../img/header.jpg);
-        background-size:1248px;
+        background-size:100%;
         background-attachment: fixed;
-        background-position: center;
+        background-position: inherit;
         background-repeat: no-repeat;
         position: relative;
+    }
+
+    .hero-text {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        margin-left: 2%;
+        font-size: 1em;
     }
 
     nav ul li {
@@ -334,6 +360,66 @@ footer {
         width: 40.625%;
         margin-left: 6.25%;
     }
+
+    /*About Styles------------------------------*/
+
+    .about-main {
+        width: 87.5%;
+        padding-top: 2%;
+        margin: auto;
+        text-align: left;
+    }
+
+    .about-main-img {
+        float: left;
+        clear: none;
+        padding: 0 6.25% 6.25% 0;
+    }
+
+    .about-main-text {
+        margin-top: -15px;
+    }
+
+    /*Projects Styles------------------------------*/
+
+    .projects-main {
+        width: 87.5%;
+        padding-top: 2%;
+        margin: auto;
+        text-align: left;
+    }
+
+    .project-wrapper {
+        margin-bottom: 2%;
+        clear: both;
+    }
+
+    .project-1-main-img, .project-3-main-img {
+        float: left;
+        clear: none;
+        padding: 0 6.25% 6.25% 0;
+    }
+
+    .project-2-main-img {
+        float: right;
+        clear: none;
+        padding: 0 0 6.25% 6.25%;
+    }
+
+    .project-1-main-text {
+        margin-top: -15px;
+    }
+
+    /*Contact Styles------------------------------*/
+
+    .contact-main {
+        width: 87.5%;
+        padding-top: 2%;
+        margin: auto;
+        text-align: left;
+    }
+
+
 
 }
 
